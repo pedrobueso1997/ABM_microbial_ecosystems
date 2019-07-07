@@ -1,0 +1,2 @@
+This experiment works with 2 species models in which both species interact similarily between each other. 
+Under these circumstances, it tries to analyse the consequences of modifying parameters like initial percentage of each species, secretion rate or movement rate.
