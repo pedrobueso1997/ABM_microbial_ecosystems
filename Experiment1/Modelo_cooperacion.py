@@ -81,7 +81,7 @@ def initialize():
         ag.death_rate=species_1_death_rate if i<species_1_percentage*number_agents else species_2_death_rate
         #El septimo atributo se refiere a la tasa de secrecion deL bien comun
         ag.secretion_rate=species_1_secretion_rate if i<species_1_percentage*number_agents else species_2_secretion_rate             
-        #Añadimos la instancia creada a la lista
+        #AÃ±adimos la instancia creada a la lista
         agents.append(ag)  
     #Generamos arrays para los bienes comunes
     public_good_1=zeros([rows_columns,rows_columns])
@@ -101,7 +101,7 @@ def observe():
     #Definimos dos listas separadas para presas y depredadores
     species_1=[ag for ag in agents if ag.type==1]
     species_2=[ag for ag in agents if ag.type==2]
-    #Dibujamos en la grafica la céluas de la especie 1 (en azul) y de la especie 2 (en rojo)
+    #Dibujamos en la grafica la cÃ©luas de la especie 1 (en azul) y de la especie 2 (en rojo)
     #En la funcion plot() el primer argumento indica el componente x, el segundo argumento el componente y, el tercer argumento el tipo de simbolo
     if len(species_1)>0:
         matplotlib.pyplot.plot([ag.x for ag in species_1],[ag.y for ag in species_1],"bo")
@@ -138,7 +138,7 @@ def update():
     secretion_rate=ag.secretion_rate
       
     #MOVIMIENTO 
-    #En este caso no consideramos que el espacio es abierto como en modelos anteriores sino que existen li�mites
+    #En este caso no consideramos que el espacio es abierto como en modelos anteriores sino que existen li­mites
     if movement>0:
         ag.x+=randint(-movement,movement)
         ag.y+=randint(-movement,movement)      
@@ -198,7 +198,7 @@ def update_one_unit_time():
     global agents
     #Definimos una variable temporal
     t=0
-    #Consideramos que cada actualizacion supone 1/n de una unidad temporal (siendo n el tama�o de la poblacion en el momento de actualizar)
+    #Consideramos que cada actualizacion supone 1/n de una unidad temporal (siendo n el tamaño de la poblacion en el momento de actualizar)
     while t<1.0:
         t+=1.0/len(agents)
         update()
