@@ -1,4 +1,4 @@
-In this folder, I will include some **Agent Based Models that try to reproduce different scenarios for microbial interactions**.
+In this folder, I include some **Agent Based Models that try to reproduce different scenarios for microbial interactions**.
 
 In the **first experiment**, I work with 2 species models in which both species interact similarily between each other. Under these circumstances, I try to analyse the consequences of modifying parameters like initial percentage of each species, secretion rates or movement rates.
 
